@@ -83,6 +83,20 @@ Read the following fields from `task_result` after the task succeeds.
 | `search_engine` | Search engine used for the query. |
 | `search_steps` | Reported search steps, each with a title and associated sources. |
 
+**Code examples**
+
+Set `SCRAPELESS_API_TOKEN` as shown above, then choose one language. Run the command without arguments to submit the sample question and print a task ID. To check that task, append the ID to the same command (for example, `python3 examples/example.py YOUR_TASK_ID`). If it prints `pending` or `running`, repeat the command **with the same ID**.
+
+On success the example prints `full_response`, followed by the title and URL of each entry in `references` when available.
+
+| Language | File | Run from the repository root |
+| --- | --- | --- |
+| Python 3 | [example.py](./examples/example.py) | `python3 examples/example.py` |
+| Node.js 18+ | [example.js](./examples/example.js) | `node examples/example.js` |
+| Go | [example.go](./examples/example.go) | `go run examples/example.go` |
+| Java 17+ with jq | [Example.java](./examples/Example.java) | `java examples/Example.java` |
+| PHP 8+ with HTTPS streams | [example.php](./examples/example.php) | `php examples/example.php` |
+
 ## Practical use cases
 
 ### AI answer monitoring
